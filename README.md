@@ -10,7 +10,7 @@ with Python dicts.
     ```python
     from dict_utils import dict_utils
 
-    dict_1 = dict_1 = {'first_level': {'second_level': {'name': 'Joe', 'Age': 30}}}
+    dict_1 = {'first_level': {'second_level': {'name': 'Joe', 'Age': 30}}}
     found_value = dict_utils.dict_search_value(dict_1, 'name')
     ```
 
