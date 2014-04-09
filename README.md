@@ -14,7 +14,7 @@ with Python dicts.
     found_value = dict_utils.dict_search_value(dict_1, 'name')
     ```
 
-    *found_value* will contain 'Joe'
+    **found_value** will contain **'Joe'**
 
 2. Compare two different dictionaries having the same keys
 
