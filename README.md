@@ -16,9 +16,15 @@ with Python dicts.
 
     *found_value* will contain 'Joe'
 
-2. Include the polls URLconf in your project urls.py like this::
+2. Compare two different dictionaries having the same keys
 
-      url(r'^polls/', include('polls.urls')),
+    ```python
+    from dict_utils import dict_utils
+
+    dict_1 = {'first_level': {'second_level': {'name': 'Joe', 'Age': 30}}}
+    dict_2 = {'level_1': {'level_2': {'name': 'Joe', 'Age': 30}}}
+    dict_utils.compare_assert_dicts(self, ['name', 'age'], dict_1, dict_2)
+    ```
 
 ## Running Tests
 
