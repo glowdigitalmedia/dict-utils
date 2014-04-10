@@ -1,4 +1,7 @@
-# dict-utils
+# dict-utils ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
+
+[![Travis-CI Status](https://secure.travis-ci.org/glowdigitalmedia/dict-utils.png?branch=master)](http://travis-ci.org/#!/glowdigitalmedia/dict-utils)
+[![Coverage Status](https://coveralls.io/repos/glowdigitalmedia/dict-utils/badge.png?branch=master)](https://coveralls.io/r/glowdigitalmedia/dict-utils?branch=master)
 
 dict-utils is a set of utilities and accessory methods usable
 with Python dicts.
@@ -31,9 +34,3 @@ with Python dicts.
 ```
 python setup.py test
 ```
-
-## Continuous Integration and Tests Coverage
-
-[![Travis-CI Status](https://secure.travis-ci.org/glowdigitalmedia/dict-utils.png?branch=master)](http://travis-ci.org/#!/glowdigitalmedia/dict-utils)
-
-[![Coverage Status](https://coveralls.io/repos/glowdigitalmedia/dict-utils/badge.png?branch=master)](https://coveralls.io/r/glowdigitalmedia/dict-utils?branch=master)
