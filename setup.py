@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='dict-utils',
-    version='0.1',
-    url='https://www.github.com/andreagrandi/dict-utils/',
+    version='0.1.1',
+    url='https://github.com/glowdigitalmedia/dict-utils/',
     author='Andrea Grandi',
     author_email='a.grandi@gmail.com',
     description='Set of utilities and accessory methods to work with Python dicts.',
