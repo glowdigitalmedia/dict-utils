@@ -15,10 +15,11 @@ def dict_search_value(d, kname):
                     return value
             if type(v)==list:
                 if len(v) > 0:
-                    if type(v[0])==dict:
-                        value = dict_search_value(v[0], kname)
-                        if value:
-                            return value
+                    for element in v:
+                        if type(element)==dict:
+                            value = dict_search_value(element, kname)
+                            if value:
+                                return value
             if k==kname:
                 return v
 
