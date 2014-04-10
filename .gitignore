@@ -1,3 +1,5 @@
 *.pyc
 dict_utils.egg-info
 dist
+build
+.coverage
