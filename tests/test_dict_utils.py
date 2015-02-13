@@ -44,3 +44,14 @@ class DictUtilsTestCase(unittest.TestCase):
         dict_1 = {'first_level': {'second_level': {'name': 'Joe', 'age': 30}}}
         dict_2 = {'level_1': {'name': 'Joe', 'age': 30}}
         dict_utils.compare_assert_dicts(self, ['name', 'age'], dict_1, dict_2)
+
+    def test_compare_dicts_different_order_same_values(self):
+        dict_1 = {'alternative_images': ['http://url4.com', 'http://url2.com', 'http://url3.com'],
+            'body': '5 stars room from 123 NIS', 'description': 'Blandland',
+            'title': 'My little Pony', 'caption': 'WWW.PONY.COM', 'image_url': 'http://url1.com',
+            'tracking_url': 'http://x.com'}
+        dict_2 = {"title": "My little Pony", "description": "Blandland",
+            "body": "5 stars room from 123 NIS", "caption": "WWW.PONY.COM",
+            "tracking_url": "http://x.com", "image_url": "http://url1.com",
+            "alternative_images": ["http://url2.com", "http://url3.com", "http://url4.com"]}
+        dict_utils.compare_assert_dicts(self, ['alternative_images'], dict_1, dict_2)

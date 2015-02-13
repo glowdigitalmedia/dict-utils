@@ -33,8 +33,14 @@ dict_2: second dictionary
 """
 
 def compare_assert_dicts(self, fields, dict_1, dict_2):
-        for f in fields:
-            value_dict1 = dict_search_value(dict_1, f)
-            value_dict2 = dict_search_value(dict_2, f)
-            self.assertEqual(value_dict1, value_dict2,
-                "Returned value: %s, expected value: %s" % (str(value_dict1), str(value_dict2)))
+    for f in fields:
+        value_dict1 = dict_search_value(dict_1, f)
+        value_dict2 = dict_search_value(dict_2, f)
+
+        if type(value_dict1) is list:
+            value_dict1.sort()
+        if type(value_dict2) is list:
+            value_dict2.sort()
+
+        self.assertEqual(value_dict1, value_dict2,
+            "Returned value: %s, expected value: %s" % (str(value_dict1), str(value_dict2)))
